@@ -9,16 +9,28 @@
 		<canvas id="canvas1" width="400" height="400">
 		Please use a browser that supports "canvas"
 		</canvas>
+
 		<script src="asg0.js"></script>
 		<script src="lib/cuon-matrix-cse160.js"></script>
 
 		<br><br>
 
 		<label for="name">v1: x</label>
-		<input type="text" id="x" name="name" required minlength="4" maxlength="8" size="10" />
+		<input type="text" id="x1" name="name" required minlength="4" maxlength="8" size="10" />
 		<label for="name">y</label>
-		<input type="text" id="y" name="name" required minlength="4" maxlength="8" size="10" />
+		<input type="text" id="y1" name="name" required minlength="4" maxlength="8" size="10" />
 		
+		<br>
+
+		<label for="name">v2: x</label>
+		<input type="text" id="x2" name="name" required minlength="4" maxlength="8" size="10" />
+		<label for="name">y</label>
+		<input type="text" id="y2" name="name" required minlength="4" maxlength="8" size="10" />
+
+		<br><br>
+
+		<input class="styled" type="button" value="Draw" onclick="handleDrawEvent()"></input>
+
 		<br><br>
 
 		<label for="Operation">Operation</label>
@@ -32,11 +44,11 @@
 		</select>
 
 		<label for="scalar">Scalar</label>
-		<input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" />
+		<input type="text" id="scalar" name="name" required minlength="4" maxlength="8" size="10" />
 
 		<br><br>
 
-		<input class="styled" type="button" value="Draw" onclick="handleDrawEvent()"></input>
+		<input class="styled" type="button" value="Draw" onclick="handleDrawOperationEvent()"></input>
 
 
 	</body>
